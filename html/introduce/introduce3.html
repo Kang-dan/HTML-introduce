@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML로 자기소개</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+    
+
+    
+    <style>
+        html, body{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 20px;
+            /* font-weight: bolder; */
+        }
+        
+        .box1 {
+            margin: 2em 2em;
+            padding:2em;
+            border-radius:40px;
+            background-color:#f7e9e8;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .button {
+            text-align: center;
+            margin: 1em 1em;
+            background-color: rgb(150, 247, 214);
+            font-weight: bolder;
+            /* background-color:#fff; */
+            box-shadow: 0 0 6px 1px rgb(150, 247, 214), 0 0 6px 1px rgb(150, 247, 214) inset;
+            border-radius: 30px;
+        }
+        
+        .box2 {
+            margin: 2em 2em;
+            padding:3em;
+            border-radius: 30px 60px/60px 30px;
+            border: solid 8px #ccc7be;
+            background-color:#f7e9e8;
+        }
+        /*픽토그램 반응형 커서*/
+        /* footer i:hover {
+            transform: translate(0, -3px);
+        } */
+
+        /*페보릿 사진*/
+        .whatilove-text {
+            font-size: 55px;
+            font-weight: 700;
+            /* font-family: 'Oswald', sans-serif; */
+            
+        }
+        img:hover {
+            transform: scale(1.7);
+            -webkit-transform: scale(1.7); /* 크롬 */
+            -moz-transform: scale(1.7); /* 파이어폭스 */
+            -o-transform: scale(1.7); /* 오페라 */
+            z-index: 1;
+            align-items: center;
+            
+        }
+        .whatilove-img {
+            margin-bottom: 20px;
+        }
+
+        .whatilove-img img {
+            width:150px;
+            height: 150px;
+            transition: all 0.3s ease-in-out;
+        }
+        /* 하단 코멘트 */
+        .interests .comment {
+            font-size: 16px;
+            font-style: italic;
+        }
+        </style>
+        
+</head>
+
+<body>
+    <form>
+        <div class="box1">
+            <h1>❤️</h1> <!--♡-->
+            <!-- <input type="hidden" name="msg" value="html"> -->
+            <div class="buttom_box">
+                <span class="button"> <!--누르면 이동-->
+                    <a href="introduce1.html" target="blank">HOME</a>
+                </span>
+                <span class="button">
+                    <a href="introduce2.html" target="blank">ABOUT ME</a>
+                </span>
+                <span class="button">
+                    <a href="introduce3.html" target="blank">FAVORITES</a>
+                </span>
+                <span class="button"> 
+                    <a href="introduce4.html" target="blank">DREAM</a>
+                </span>
+            </div>
+        </div>
+       
+    
+        <div class="box2">
+            <div class="size">
+                <section class="interests">
+                    <header>
+                    <!-- 제목 -->
+                    <p style="margin: 10px;" class="whatilove-text"><span>WHAT</span>&nbsp<span style="color: #2B3856;">I LOVE</span><p>
+                    </header>
+                    <article>
+                      <!-- 이미지 -->
+                      <div class="whatilove-img">
+                        <img src="../love/love3.jpg">
+                        <img src="../love/love4.jpg">
+                        <img src="../love/love10.JPG">
+                        <img src="../love/love12.JPG">
+                        <img src="../love/love13.PNG">
+                        <img src="../love/love15.jpg">
+                        <img src="../love/love16.jpg">
+                        <img src="../love/love17.jpg">
+                        <img src="../love/love23.jpg">
+                        <img src="../love/love18.jpg">
+                        <img src="../love/love19.jpg">
+                        <img src="../love/love20.jpg">
+                        <img src="../love/love21.jpg">
+                        <img src="../love/love22.jpg">
+                      </div>
+                      <!-- 코멘트 -->
+                      <p class="comment">Things that make me happy✨<br>
+                      :walking, Puppy, Eating delicious desserts, bicycle riding on sunny days, going to a cafe, and my life itself</p>
+                    </article>
+                  </section>
+            </div>
+        </div>
+<!-- 
+        <div>
+            <textarea rows="10" cols="80">자기소개를 작성하세요</textarea>
+        </div> -->
+    </form>
+    
+</body>
+</body>
+</html>
