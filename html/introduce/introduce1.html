@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML로 자기소개</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+    
+
+    
+    <style>
+        html, body{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 20px;
+            /* font-weight: bolder; */
+        }
+        
+        .box1 {
+            margin: 2em 2em;
+            padding:2em;
+            border-radius:40px;
+            background-color:#f7e9e8;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .button {
+            text-align: center;
+            margin: 1em 1em;
+            background-color: rgb(150, 247, 214);
+            font-weight: bolder;
+            /* background-color:#fff; */
+            box-shadow: 0 0 6px 1px rgb(150, 247, 214), 0 0 6px 1px rgb(150, 247, 214) inset;
+            border-radius: 30px;
+        }
+        
+        .box2 {
+            margin: 2em 2em;
+            padding:2em;
+            border-radius: 30px 60px/60px 30px;
+            border: solid 8px #ccc7be;
+            background-color:#f7e9e8;
+        }
+        </style>
+        
+</head>
+
+<body>
+    <form>
+        <div class="box1">
+            <h1>Welcome To Danny World!</h1>
+            <!-- <input type="hidden" name="msg" value="html"> -->
+            <div class="buttom_box">
+                <span class="button"> <!--누르면 이동-->
+                    <a href="introduce1.html" target="blank">HOME</a>
+                </span>
+                <span class="button">
+                    <a href="introduce2.html" target="blank">ABOUT ME</a>
+                </span>
+                <span class="button">
+                    <a href="#favorites" target="blank">FAVORITES</a>
+                </span>
+                <span class="button"> 
+                    <a href="#favorites" target="blank">DREAM</a>
+                </span>
+            </div>
+        </div>
+       
+    
+        <div class="box2">
+            <div>
+                <label>이름 : </label>
+                <input type="test" name="id">
+            </div>
+            <div>
+                <label>나이 : </label>
+                <input type="test" name="test">
+            </div>
+            <div>
+                <!-- <br> -->
+                <label>성별 </label>
+                <div>
+                    <input type="radio" id="man" name="gender">
+                    <label for="man">남</label>
+                    <input type="radio" id="woman" name="gender">
+                    <label for="woman">여</label>
+                </div>
+            </div>
+            <div>
+                <!-- <br> -->
+                <label>사는 곳 : </label>
+                <select>
+                    <option>지역</option>
+                    <option>서울</option>
+                    <option>대전</option>
+                    <option>구미</option>
+                    <option>광주</option>
+                    <option>부산</option>
+                </select>
+                <div>
+                    <!-- <br> -->
+                    <label>MBTI </label>
+                    <div>
+                        <label><input type="checkbox"> istp</label>
+                        <label><input type="checkbox"> intp </label>
+                        <label><input type="checkbox"> infj </label>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox"id="fruit1">
+                    <label for="fruit1">enfj</label>
+                    <input type="checkbox" id="fruit2">
+                    <label for="fruit2">entj</label>
+                    <input type="checkbox" id="fruit3">
+                    <label for=""fruit3>estp</label>
+                </div>
+    
+            </div>
+            <!-- <div>
+                <label>color :</label>
+                <input type="color" />
+            </div> -->
+            <div>
+                <!-- <br> -->
+                <label>저에 대해 더 알고싶으신가요?</label>
+                <div>
+                    <input type="button" value="클릭"
+                        onclick="alert('ABOUT ME를 눌러주세요~')"
+                    >      
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div>
+            <textarea rows="10" cols="80">자기소개를 작성하세요</textarea>
+        </div> -->
+    </form>
+    
+</body>
+</body>
+</html>

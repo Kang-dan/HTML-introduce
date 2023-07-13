@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML로 자기소개</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+    
+
+    
+    <style>
+        html, body{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 20px;
+            /* font-weight: bolder; */
+        }
+        
+        .box1 {
+            margin: 2em 2em;
+            padding:2em;
+            border-radius:40px;
+            background-color:#f7e9e8;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .button {
+            text-align: center;
+            margin: 1em 1em;
+            background-color: rgb(150, 247, 214);
+            font-weight: bolder;
+            /* background-color:#fff; */
+            box-shadow: 0 0 6px 1px rgb(150, 247, 214), 0 0 6px 1px rgb(150, 247, 214) inset;
+            border-radius: 30px;
+        }
+        
+        .box2 {
+            margin: 2em 2em;
+            padding:2em;
+            border-radius: 30px 60px/60px 30px;
+            border: solid 8px #ccc7be;
+            background-color:#f7e9e8;
+        }
+        /*픽토그램 반응형 커서*/
+        footer i:hover {
+            transform: translate(0, -3px);
+        }
+
+        /*어바웃 미 사진*/
+        .experience img {
+            margin-right: 7px;
+            margin-top:10px;
+            border: 5px;
+            border-style: solid;
+            border-color: lightgray;
+            border-image-outset: 10px;
+            width: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+        /* 커서 올릴 시 이미지 크게(모든 이미지 파일에 적용) */
+        img:hover {
+            transform: scale(1.7);
+            -webkit-transform: scale(1.7); /* 크롬 */
+            -moz-transform: scale(1.7); /* 파이어폭스 */
+            -o-transform: scale(1.7); /* 오페라 */
+            z-index: 1;
+            align-items: center;
+        }
+        .experience p{
+            font-size: 55px;
+            font-weight: 700;
+            font-family: 'Oswald', sans-serif;
+        }
+        /* for layout */
+        .contents1 {
+            width: 700px;
+        }
+        .contents2 {
+            width: 700px;
+            margin-left: 120px;
+            margin-top: 30px;
+        }
+        /* 일한 기간 */
+        .year {
+            font-family: 'Oswald', sans-serif;
+            font-size: 17px;
+            opacity: 0.5;
+        }
+        </style>
+        
+</head>
+
+<body>
+    <form>
+        <div class="box1">
+            <h1>ABOUT 강대은</h1>
+            <!-- <input type="hidden" name="msg" value="html"> -->
+            <div class="buttom_box">
+                <span class="button"> <!--누르면 이동-->
+                    <a href="introduce1.html" target="blank">HOME</a>
+                </span>
+                <span class="button">
+                    <a href="introduce2.html" target="blank">ABOUT ME</a>
+                </span>
+                <span class="button">
+                    <a href="#favorites" target="blank">FAVORITES</a>
+                </span>
+                <span class="button"> 
+                    <a href="#favorites" target="blank">DREAM</a>
+                </span>
+            </div>
+        </div>
+       
+    
+        <div class="box2">
+            <div class="experience">
+                <!-- 상단 텍스트 & 사진 -->
+                <div class="contents1">
+                  <p class="title"><span>Teacher</span>&nbsp<span style="color: #2B3856;">중학교</span>&nbsp<span class="year">2022~2023.02</span></p>
+                  <img  src="../school/school1.jpg">
+                  <img src="../school/school_class.jpg">
+                  <img  src="../school/school_meta2.png">
+                  <img style="width: 100px" src="../school/school_violin.jpg">
+                </div>
+                <!-- 하단 텍스트 & 사진 -->
+                <div class="contents2">
+                  <p class="title"><span>Barista</span>&nbsp<span style="color: #2B3856;">빵과 커피</span>&nbsp<span class="year">2017~2021.05</p>
+                  <img class="photos" src="../barista/barista1.jpg">
+                  <img style="width: 140px" src="../barista/barista2.jpg">
+                </div>
+            </div>
+
+                <label>저에 대해 더 알고싶으신가요?</label>
+                <div>
+                    <input type="button" value="클릭"
+                        onclick="alert('그럼 PROFILE을 눌러주세요~')"
+                    >      
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div>
+            <textarea rows="10" cols="80">자기소개를 작성하세요</textarea>
+        </div> -->
+    </form>
+    
+</body>
+</body>
+</html>
